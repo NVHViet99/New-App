@@ -9,14 +9,11 @@ chartPie.forEach((myChart, index) => {
         {
           data: [29, 71],
           //backgroundColor:'green',
-          backgroundColor: [
-            "rgba(255, 99, 132, 0.6)",
-            "rgba(54, 162, 235, 0.6)",
-          ],
+          backgroundColor: ["rgba(255, 99, 132, 0.6)", "rgba(54, 162, 235, 0.6)"],
           borderWidth: 1,
-          borderColor: "#777",
-          hoverBorderWidth: 2,
-          hoverBorderColor: "#000",
+          borderColor: "#2C272E",
+          hoverBorderWidth: 1,
+          hoverBorderColor: "#090910",
         },
       ],
     },

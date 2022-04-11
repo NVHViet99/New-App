@@ -19,6 +19,38 @@
       </nav>
       <div class="content">
         <div class="table">
+          <div class="table-infor__line">
+            <div class="table-infor__box"></div>
+            <div class="table-value">
+              <div class="h2-table">
+                <h2 class="table-infor__content">Line 1</h2>
+                <table class="table-container table-target">
+                  <tr class="class-col-target">
+                    <th>Target</th>
+                    <th>FGs</th>
+                  </tr>
+                  <tr class="table-number">
+                    <td>6000</td>
+                    <td>4345</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="h2-table">
+                <h2 class="table-infor__content">Running</h2>
+                <table class="table-container">
+                  <tr class="class-col-time">
+                    <th>Run time</th>
+                    <th>Down Time</th>
+                  </tr>
+                  <tr class="table-number">
+                    <td>144</td>
+                    <td>25</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- Form submit -->
           <div class="form display-none">
             <div class="input-form">
               <label for="target">Target</label>
@@ -31,54 +63,15 @@
 
           <div class="table-infor">
             <div class="table-infor__chart">
-              <div class="table-infor__line">
-                <div class="table-infor__box">
-                  <h2 class="table-infor__content line-1">Line 1</h2>
-                </div>
-                <div class="table-value">
-                  <table class="table-container table-target">
-                    <tr class="class-col-target">
-                      <th>Target</th>
-                      <th>FGs</th>
-                    </tr>
-                    <tr class="table-number">
-                      <td>6000</td>
-                      <td>4345</td>
-                    </tr>
-                  </table>
-                </div>
-                <!-- <div class="table-infor__data">
-                  <div class="table-infor__data-number">
-                    <h6 class="table-infor__data-number__title">Target</h6>
-                    <h4 class="table-infor__data-number__description">6000</h4>
-                  </div>
-                  <div class="table-infor__data-number">
-                    <h6 class="table-infor__data-number__title">FGs</h6>
-                    <h4 class="table-infor__data-number__description">4245</h4>
-                  </div>
-                </div> -->
-              </div>
               <div class="table-infor__chart-line">
                 <canvas id="chart-APQ" class="chart-APQ"></canvas>
               </div>
             </div>
+
             <div class="table-infor__chart">
               <div class="table-infor__line">
-                <div class="table-infor__box">
-                  <h2 class="table-infor__content">Running</h2>
-                </div>
-                <div class="table-value">
-                  <table class="table-container">
-                    <tr class="class-col-time">
-                      <th>Run time</th>
-                      <th>Down Time</th>
-                    </tr>
-                    <tr class="table-number">
-                      <td>144</td>
-                      <td>25</td>
-                    </tr>
-                  </table>
-                </div>
+                <div class="table-infor__box"></div>
+
                 <!-- <div class="table-infor__data">
                   <div class="table-infor__data-number">
                     <h6 class="table-infor__data-number__title">Runtime</h6>

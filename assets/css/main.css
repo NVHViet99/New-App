@@ -1,148 +1,69 @@
-.content {
-  margin: 100px 0;
-  width: 100%;
-  height: 600px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.table {
+  height: 100%;
+  background-color: #fafdd6;
+  margin: 10px 10px;
+}
+
+.main {
   display: flex;
+  padding: 0 40px;
+}
+/* Table */
+.table-content {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px 0;
 }
 
-@media (max-width: 450px) {
-  .content {
-    height: 720px;
-  }
+.table-content h2 {
+  font-size: 30px;
 }
 
-.content .table {
-  width: 75%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: rgb(212, 209, 209);
-  border-radius: 5px;
-  /* margin: 0 40px; */
-  margin-bottom: 10px;
+.table-content table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-@media (max-width: 450px) {
-  .content .table {
-    width: 100%;
-    /* margin: 10px 0px; */
-  }
+.table-content table,
+th,
+td {
+  border: 1px solid #333;
 }
 
-.content .table-infor {
-  flex: 2;
-  display: flex;
-}
-
-.table-infor .table-infor__chart {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-
-.table-infor .table-infor__chart .table-infor__line {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.table-infor__box {
+/* Button */
+.btn-container {
   display: flex;
   justify-content: space-around;
-  align-content: center;
-}
-
-.table-infor__content {
-  font-size: 35px;
-}
-
-@media (max-width: 450px) {
-  .table-infor__content {
-    font-size: 25px;
-  }
-}
-
-.table-infor .table-infor__data {
-  display: flex;
-  height: 100%;
-}
-
-.table-infor .table-infor__data-number {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-
-.table-infor .table-infor__data-number__title {
-  height: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-}
-
-.table-infor .table-infor__data-number__description {
-  height: 60%;
-  margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 10px;
 }
 
-.table-infor .table-infor__chart .table-infor__status {
-  height: 100%;
-  background-color: red;
-}
-
-.table-infor .table-infor__chart .table-infor__chart-line {
-  height: 100%;
-}
-
-.table-infor .table-infor__chart .table-infor__chart-status {
-  height: 100%;
-}
-
-.content .table-data {
-  flex: 1;
-}
-
-.table-data .chart-data {
-  height: 150px;
-}
-
-/* Button CSS */
-.button {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 20px;
-  text-align: center;
-}
-
 .btn {
-  padding: 8px 13px;
+  padding: 10px 15px;
   border-radius: 5px;
   border: none;
   background-color: #325288;
   color: #fff;
+  font-weight: bold;
 }
 
 .btn:hover {
-  opacity: 0.85;
   cursor: pointer;
+  opacity: 0.85;
 }
 
-.display-none {
-  display: none !important;
-}
-
-/* Form css */
+/* Form */
 .form {
   display: flex;
   flex-direction: column;
   align-self: center;
-  margin-top: 20%;
 }
 
 .input-form {
@@ -151,67 +72,19 @@
   margin-bottom: 20px;
 }
 
+.input-form input {
+  padding: 5px;
+  border-radius: 3px;
+}
+
 .label-speed {
   margin-top: 15px;
 }
 
-/* Table value */
-.table-value {
-  display: flex;
-  justify-content: space-around;
+.col-container {
+  margin-bottom: 10px;
 }
 
-.h2-table {
-  text-align: center;
-}
-
-.table-value th,
-td {
-  border: 1px solid;
-}
-
-.table-container {
-  margin: 10px 5px;
-  margin-left: 0px;
-  width: 100%;
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  .table-value {
-    display: flex;
-    flex-direction: column;
-  }
-  .table-container {
-    width: 96%;
-  }
-}
-
-.table-number {
-  font-size: 25px;
-  font-weight: bold;
-  border: 1px solid black;
-}
-
-@media (max-width: 450px) {
-  .table-number {
-    font-size: 14px;
-  }
-  .class-col-target {
-    font-size: 15px;
-  }
-  .class-col-time {
-    font-size: 15px;
-  }
-  .class-col-target {
-    height: 55px;
-  }
-}
-
-.class-col-target {
-  background-color: #faeee7;
-}
-
-.class-col-time {
-  background-color: #e8ffc2;
+.hidden {
+  display: none !important;
 }
